@@ -1,5 +1,5 @@
 {
-  "name": "cc_api_vic",
+  "name": "r3d",
   "version": "9.9.9",
   "description": "",
   "main": "index.js",
@@ -14,6 +14,7 @@
   "license": "UNLICENSED",
   "dependencies": {
     "body-parser": "^1.18.3",
+    "config": "^3.2.3",
     "express": "^4.16.4",
     "knex": "^0.15.2",
     "moment": "^2.22.2",
