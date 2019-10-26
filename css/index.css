@@ -70,7 +70,7 @@ p {
   border: black 4px solid;
   background: white;
   padding: 3%;
-  box-shadow: rgba(0, 0, 0, 0.8) 15px 15px;
+  box-shadow: rgba(0, 0, 0, 0.9) 15px 20px;
 }
 
 code {
@@ -107,7 +107,7 @@ button:focus {
 
 iframe {
   margin-top: 3%;
-  height: 100vh;
+  height: 101vh;
 }
 
 #taquerias-by-rating {
