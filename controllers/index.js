@@ -1,5 +1,3 @@
-const config = require('../config');
-const knex = require('knex')(config.db);
 const { _tacoParse, _update } = require('../utility');
 const { buildSchema } = require('graphql');
 
@@ -54,7 +52,6 @@ const root = {
   },
   taqueriasByRating: rq => {
     const tacoRating = _tacoParse(rq.rating);
-    console.log(tacoRating);
     return knex
       .select('*')
       .from('taquerias')
@@ -63,9 +60,10 @@ const root = {
         return taquerias;
       });
   },
-  updateRatingByName: req => {
-    const taqueriaName = req.name;
-    const newRating = _tacoParse(req.rating);
+  updateRatingByName: rq => {
+    console.log(rq);
+    const taqueriaName = rq.name;
+    const newRating = _tacoParse(rq.rating);
     return knex('taquerias')
       .where({ name: taqueriaName })
       .update({ rating: newRating })

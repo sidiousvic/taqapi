@@ -18,7 +18,7 @@
           <p>about</p>
         </div>
         <div class="navButton">
-          <p>docs</p>
+          <p>try</p>
         </div>
       </div>
     </nav>
@@ -29,12 +29,22 @@
         A GraphQL-powered API for taquerías.
       </p>
 
-      <iframe
-        src="http://localhost:4000/graphql"
-        height="100%"
-        width="100%"
-      ></iframe>
+      <h3>Finding your favorite puesto is just a query away.</h3>
+
+      <pre class="line-numbers">
+            <code class="language-css">
+  {
+    taqueria(name: "La Cubanita") {
+      name
+      specialty
+      rating
+    }
+  }
+            </code>
+          </pre>
     </div>
+
+    <iframe id="try" src="http://localhost:4000/graphql" width="100%"></iframe>
 
     <link rel="stylesheet" href="css/index.css" />
   </body>

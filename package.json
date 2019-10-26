@@ -14,6 +14,8 @@
   "author": "sidiousvic",
   "license": "UNLICENSED",
   "dependencies": {
+    "apollo": "^2.21.0",
+    "apollo-server": "^2.9.7",
     "body-parser": "^1.18.3",
     "config": "^3.2.3",
     "express": "^4.17.1",
