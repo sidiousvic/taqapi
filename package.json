@@ -4,7 +4,7 @@
   "description": "An API for Mexican taquerías",
   "main": "launch.js",
   "scripts": {
-    "test": "node tests/initialize.js && mocha tests/test.js && yarn lint",
+    "test": "mocha ./test/test.js",
     "lint": "eslint --fix .",
     "dev": "nodemon index.js",
     "start": "node index.js",
@@ -17,6 +17,8 @@
     "apollo": "^2.21.0",
     "apollo-server": "^2.9.7",
     "body-parser": "^1.18.3",
+    "chai-graphql": "^4.0.0",
+    "chai-http": "^4.3.0",
     "config": "^3.2.3",
     "express": "^4.17.1",
     "express-graphql": "^0.9.0",
@@ -29,13 +31,13 @@
     "underscore": "^1.9.1"
   },
   "devDependencies": {
-    "chai": "^4.0.2",
+    "chai": "^4.2.0",
     "eslint": "^5.7.0",
     "eslint-config-prettier": "^3.1.0",
     "eslint-config-problems": "^1.1.0",
     "eslint-plugin-prettier": "^3.0.0",
     "husky": "^1.1.2",
-    "mocha": "^5.2.0",
+    "mocha": "^6.2.2",
     "prettier": "^1.18.2",
     "prettierrc": "^0.0.0-5",
     "pretty-quick": "^1.4.1",

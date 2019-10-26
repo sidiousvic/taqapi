@@ -2,8 +2,6 @@
 
 **This was created during my time as a student at Code Chrysalis.**
 
-An API for mexican taquerías.
-
 ## How to use
 
 Get taquería info through GraphQL queries.
