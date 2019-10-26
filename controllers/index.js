@@ -66,7 +66,6 @@ const root = {
   updateRatingByName: req => {
     const taqueriaName = req.name;
     const newRating = _tacoParse(req.rating);
-    // console.log(taqueriaName, newRating);
     return knex('taquerias')
       .where({ name: taqueriaName })
       .update({ rating: newRating })
