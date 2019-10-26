@@ -1,7 +1,7 @@
 exports.up = function(knex, Promise) {
   return knex.schema
     .createTable('taquerias', t => {
-      t.increments().index();
+      t.increments('id').index();
 
       t.string('name')
         .notNullable()
@@ -15,25 +15,29 @@ exports.up = function(knex, Promise) {
     })
     .then(() => {
       return knex('taquerias').insert([
-        { name: 'El Ratón', specialty: 'tortas de jamón', rating: '***' },
-        { name: 'Sr.Taco', specialty: 'tacos de barbacoa', rating: '**' },
-        { name: 'Taco Fish', specialty: 'tacos de camarón', rating: '***' },
+        { name: 'El Ratón', specialty: 'tortas de jamón', rating: '🌮🌮🌮' },
+        { name: 'Sr.Taco', specialty: 'tacos de barbacoa', rating: '🌮🌮' },
+        { name: 'Taco Fish', specialty: 'tacos de camarón', rating: '🌮🌮🌮' },
         {
           name: 'Harry Potter y la Orden del Taco',
           specialty: 'tacos de chile verde',
-          rating: '*'
+          rating: '🌮'
         },
-        { name: 'Ricos Tacos', specialty: 'tacos al pastor', rating: '**' },
-        { name: 'Tacos Obregón', specialty: 'tacos al pastor', rating: '***' },
+        { name: 'Ricos Tacos', specialty: 'tacos al pastor', rating: '🌮🌮' },
+        {
+          name: 'Tacos Obregón',
+          specialty: 'tacos al pastor',
+          rating: '🌮🌮🌮'
+        },
         {
           name: 'Hoy Cena Pancho',
           specialty: 'tacos de barbacoa',
-          rating: '***'
+          rating: '🌮🌮🌮'
         },
-        { name: 'El Escuadrón', specialty: 'montados', rating: '**' },
-        { name: 'La Cubanita', specialty: 'tacos al pastor', rating: '***' },
-        { name: 'Changolin', specialty: 'gringas', rating: '***' },
-        { name: 'Cande', specialty: 'tacos de costilla', rating: '**' }
+        { name: 'El Escuadrón', specialty: 'montados', rating: '🌮🌮' },
+        { name: 'La Cubanita', specialty: 'tacos al pastor', rating: '🌮🌮' },
+        { name: 'Changolin', specialty: 'gringas', rating: '🌮🌮🌮' },
+        { name: 'Cande', specialty: 'tacos de costilla', rating: '🌮' }
       ]);
     });
 };
