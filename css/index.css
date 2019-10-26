@@ -69,13 +69,57 @@ code {
   font-family: Fira Code;
 }
 
-.line-numbers {
-  font-style: Fira Code;
+.snippet {
+  font-family;: Fira Code;
   font-size: 14pt;
   background: whitesmoke;
+  border: gainsboro 1px solid;
+  border-radius: 5px;
+}
+
+button {
+  font-size: 14pt;
+  width: 20%;
+  color: white;
+  height: 10%;
+  background: orangered;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button p {
+  font-family: Fira Code;
+}
+
+button:focus {
+  outline: none;
 }
 
 iframe {
   margin-top: 3%;
   height: 100vh;
+}
+
+
+#taquerias-by-rating {
+  display: block;
+  height: 300px;
+}
+
+pre {
+  overflow-x: auto;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}
+
+.sample {
+  margin-top: 7%;
+}
+
+a {
+  text-decoration: underline;
+  color: orangered;
 }

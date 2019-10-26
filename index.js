@@ -52,7 +52,6 @@ const resolvers = {
     },
     taqueriasByRating: (rt, rq) => {
       const tacoRating = _tacoParse(rq.rating);
-      console.log(tacoRating);
       return knex
         .select('*')
         .from('taquerias')

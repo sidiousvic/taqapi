@@ -10,7 +10,7 @@
     <nav>
       <div class="title"><p>taqAPI 🌮</p></div>
 
-      <div class="navButtons">
+      <!-- <div class="navButtons">
         <div class="navButton">
           <p>casa</p>
         </div>
@@ -20,31 +20,80 @@
         <div class="navButton">
           <p>try</p>
         </div>
-      </div>
+      </div> -->
     </nav>
 
     <div class="readMe">
       <h1>All the 🌮, one endpoint away.</h1>
       <p>
-        A GraphQL-powered API for taquerías.
+        A GraphQL/Apollo-powered API for querying
+        <a href="https://en.wikipedia.org/wiki/Taco_stand">taquerías.</a>
       </p>
 
-      <h3>Finding your favorite puesto is just a query away.</h3>
+      <a href="#try"
+        ><button><p>try it 🌮</p></button></a
+      >
 
-      <pre class="line-numbers">
-            <code class="language-css">
+      <div class="sample">
+        <h3>Find your favorite 🧡 puesto.</h3>
+
+        <pre class="snippet">
+          <code class="language-css">
   {
-    taqueria(name: "La Cubanita") {
+    taqueria(<span style="color: orangered">name</span>: <span style="color: rgb(219, 95, 219)">"La Cubanita"</span>) {
       name
       specialty
       rating
     }
-  }
-            </code>
+  }  </code>
+        </pre>
+      </div>
+
+      <div class="sample">
+        <h3>Search by rating to find the firest 🔥 tacos in town.</h3>
+
+        <pre class="snippet">
+          <code class="language-css">           
+  {
+    taqueriasByRating(<span style="color: orangered">rating</span>:<span style="color: rgb(219, 95, 219)">3</span>) {
+      name
+      rating
+      specialty
+    }
+  }              </code>
+        </pre>
+      </div>
+
+      <div class="sample">
+        <h3>Or simply order all taquerias. 🤟🏽</h3>
+
+        <pre class="snippet">
+            <code class="language-css">           
+    {
+      taquerias {
+        name
+        rating
+        specialty
+      }
+    }               </code>
           </pre>
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <h2>made by <a href="sidiousvic.dev">@sidiousvic</a></h2>
+      <h2>
+        visit the repo on
+        <a href="https://github.com/sidiousvic/taqapi">GitHub</a>
+      </h2>
     </div>
 
-    <iframe id="try" src="http://localhost:4000/graphql" width="100%"></iframe>
+    <iframe
+      id="try"
+      src="http://localhost:4000/graphql?query=%7B%0A%20%20taqueria%28name%3A%20%22La%20Cubanita%22%29%20%7B%0A%20%20%20%20name%0A%20%20%20%20specialty%0A%20%20%20%20rating%0A%20%20%7D%0A%7D%0A%0A%23%20%7B%0A%23%20%20%20taqueriasByRating%28rating%3A%203%29%20%7B%0A%23%20%20%20%20%20name%0A%23%20%20%20%20%20rating%0A%23%20%20%20%20%20specialty%0A%23%20%20%20%7D%0A%23%20%7D%0A%0A%23%20%7B%0A%23%20%20%20taquerias%20%7B%0A%23%20%20%20%20%20name%0A%23%20%20%20%20%20rating%0A%23%20%20%20%20%20specialty%0A%23%20%20%20%7D%0A%23%20%7D%0A"
+      width="100%"
+    ></iframe>
 
     <link rel="stylesheet" href="css/index.css" />
   </body>
