@@ -1,1 +1,3 @@
-# cc_api
+# TaqAPI 🌮
+
+An API for Mexican taquerías
