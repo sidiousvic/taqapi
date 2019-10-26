@@ -8,13 +8,5 @@ module.exports = {
       user: process.env.DB_USER || 'VICSIDIOUS',
       password: process.env.DB_PASSWORD || 'VICSIDIOUS'
     }
-  },
-
-  express: {
-    port: process.env.PORT || 3000
-  },
-
-  logger: {
-    format: 'dddd MMMM Do YYYY, h:mm:ss a'
   }
 };
