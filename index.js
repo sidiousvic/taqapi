@@ -77,20 +77,15 @@ const resolvers = {
 };
 
 const app = express();
+app.get('/', (req, res) => {
+  res.sendFile('index.html');
+});
+
 const server = new ApolloServer({
   typeDefs,
   resolvers,
   introspection: true,
   playground: true
-});
-
-app.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, 'index.html'));
-});
-
-server.applyMiddleware({
-  path: '/index.html',
-  app
 });
 
 const PORT = process.env.PORT || 4000;
