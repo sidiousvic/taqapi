@@ -23,6 +23,7 @@
     "express": "^4.17.1",
     "express-graphql": "^0.9.0",
     "graphql": "^14.5.8",
+    "heroku-cli": "^7.0.9",
     "knex": "^0.15.2",
     "moment": "^2.22.2",
     "nodemon": "^1.19.4",
