@@ -9,7 +9,6 @@ A GraphQL/Apollo-powered API for querying taquerías.
 <br>
 <img style="margin-right: 30px" src="./assets/taqueria.gif">
 <br>
-<br>
 
 _A taco stand or taquería is a food stall, food cart or restaurant that specializes in tacos and other Mexican dishes._
 
@@ -20,7 +19,7 @@ _Taco stands are an integral part of Mexican street food. 🌮_
 
 ### Good taquerías are difficult to come across—often only through word-of-mouth.
 
-_No more._ taqAPI is a database/API where you can find the taco stand of your dreams. 🌜
+_No more._ [taqAPI](https://taqapi.herokuapp.com) is a database/API that lets you find the taco stand of your dreams. 🌜
 
 <br>
 
