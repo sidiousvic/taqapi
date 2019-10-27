@@ -8,6 +8,7 @@
     "lint": "eslint --fix .",
     "dev": "nodemon index.js",
     "start": "node index.js",
+    "launch": "concurrently \"http-server -a localhost -p 3000\" \"open http://localhost:3000\"",
     "migrate": "knex migrate:latest --knexfile models/knexfile.js",
     "rollback": "knex migrate:rollback --knexfile models/knexfile.js "
   },
