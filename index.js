@@ -89,7 +89,7 @@ app.get('*', (req, res) => {
 });
 
 server.applyMiddleware({
-  path: 'index.html',
+  path: '/index.html',
   app
 });
 
