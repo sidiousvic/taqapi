@@ -1,6 +1,7 @@
 # TaqAPI 🌮
 
 _This was created during my time as a student at [Code Chrysalis](https://www.codechrysalis.io/)._
+
 Get taquería info through GraphQL queries.
 
 ## How to use
