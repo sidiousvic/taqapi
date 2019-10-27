@@ -8,7 +8,9 @@ A GraphQL/Apollo-powered API for querying taquerías.
 <img style="margin-right: 30px" src="./assets/taqueria.gif">
 
 ```
-A taco stand or taquería is a food stall, food cart or restaurant that specializes in tacos and other Mexican dishes.
+A taco stand or taquería is a food stall, food cart or restaurant
+
+that specializes in tacos and other Mexican dishes.
 
 The food is typically prepared quickly and tends to be inexpensive.
 
