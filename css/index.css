@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Fira Code';
+  src: url('../assets/FiraCode-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html {
   scroll-behavior: smooth;
 }
