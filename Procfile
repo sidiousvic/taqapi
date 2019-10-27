@@ -1,2 +1,2 @@
-web: yarn migrate && yarn start
+web: yarn rollback && yarn migrate && yarn start
 node index.js
