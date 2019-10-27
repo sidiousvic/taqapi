@@ -6,8 +6,6 @@ _This was created during my time as a student at [Code Chrysalis](https://www.co
 
 A GraphQL/Apollo-powered API for querying taquerías.
 
-## [taqAPI](https://taqapi.herokuapp.com) 🌮 on Heroku
-
 <br>
 <img style="margin-right: 30px" src="./assets/taqueria.gif">
 <br>
@@ -91,5 +89,9 @@ yarn dev
 yarn launch
 
 ```
+
+<br>
+
+## [taqAPI](https://taqapi.herokuapp.com) 🌮 on Heroku
 
 developed by [sidiousvic](https://sidiousvic.dev)
