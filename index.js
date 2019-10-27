@@ -1,4 +1,4 @@
-const { ApolloServer, gql } = require('apollo-server');
+const { ApolloServer, gql } = require('apollo-server-express');
 const express = require('express');
 const { _tacoParse, _update } = require('./utility');
 const config = require('./config');
@@ -76,11 +76,6 @@ const resolvers = {
   }
 };
 
-const app = express();
-app.get('/', (req, res) => {
-  res.sendFile('index.html');
-});
-
 const server = new ApolloServer({
   typeDefs,
   resolvers,
@@ -88,7 +83,15 @@ const server = new ApolloServer({
   playground: true
 });
 
+const app = express();
+
+app.get('/', (req, res) => {
+  res.sendFile(__dirname + '/index.html');
+});
+app.use(express.static('.'));
+server.applyMiddleware({ app });
+
 const PORT = process.env.PORT || 4000;
-server.listen(PORT, () => {
+app.listen(PORT, () => {
   console.log(`Running a GraphQL API server at localhost:${PORT}/graphql`);
 });
