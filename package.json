@@ -17,7 +17,7 @@
   "dependencies": {
     "apollo": "^2.21.0",
     "apollo-server": "^2.9.7",
-    "apollo-server-express": "^2.9.7",
+    "apollo-server-express": "^2.14.2",
     "body-parser": "^1.18.3",
     "chai-graphql": "^4.0.0",
     "chai-http": "^4.3.0",
