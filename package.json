@@ -27,7 +27,7 @@
     "graphql": "^14.5.8",
     "heroku-cli": "^7.0.9",
     "knex": "^0.19.5",
-    "moment": "^2.22.2",
+    "moment": "^2.29.4",
     "nodemon": "^1.19.4",
     "pg": "^7.5.0",
     "underscore": "^1.9.1"
